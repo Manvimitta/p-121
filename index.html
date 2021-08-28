@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image Recognizer</title>
+    <link class="img-responsive logo" rel="shortcut icon" href="logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <span> 
+      <span><img src="logo.jpg" class="img-responsive logo"></span>
+    </span>
+  <div class="jrj">
+    <div class="main_div">
+      <div class="test_images_and_result">
+          <div>
+            <img src="bottle.jpg" class="img-responsive">
+          </div>
+        <h5>Output on <b class="which">GLens Project - </b>
+          <span id="wolfram" class="model">Water Bottle</span>
+        </h5>
+        <h5>Output on <b class="which">Mobilenet Model - </b>
+          <span id="mobilenet" class="model">Water Bottle</span>
+        </h5>
+        <div class="mini_result">
+          <h4>Result - </h4>
+          <hr>
+          <h4><b>Draw</b></h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_div">
+      <div class="test_images_and_result">
+          <div>
+            <b class="first_label" style="color: chocolate;">2. Test Image - </b>
+          </div>
+          <div>
+            <img src="shoes.jpg" class="img-reesponsive">
+          </div>
+          <h5>Output on <b class="which">GLens Project - </b>
+            <span id="wolfram" class="model">Canvas shoes</span>
+          </h5>
+          <h5>Output on <b class="which">Mobilenet Model - </b>
+            <span id="mobilenet" class="model">Running Shoes</span>
+          </h5>
+        <div class="mini_result">
+          <h4>Result - </h4>
+          <hr>
+          <h4><b>MobileNet</b> Is More Accurate</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_div">
+      <div class="test_images_and_result">
+          <div>
+            <b class="first_label" style="color: chocolate;">3. Test Image - </b>
+          </div>
+          <div>
+            <img src="headphones.jpg" class="img-reesponsive" style="height: 250px;">
+          </div>
+          <h5>Output on <b class="which">GLens Project - </b>
+            <span id="wolfram" class="model">Headphones</span>
+          </h5>
+          <h5>Output on <b class="which">Mobilenet Model - </b>
+            <span id="mobilenet" class="model">Microphone, Mike</span>
+          </h5>
+          <div class="mini_result">
+            <h4>Result - </h4>
+            <hr>
+            <h4><b>Google Lens</b> Is More Accurate</h4>
+          </div>
+      </div>
+    </div>
+
+    <div class="main_div">
+      <div class="test_images_and_result">
+          <div>
+            <b class="first_label" style="color: chocolate;">4. Test Image - </b>
+          </div>
+          <div>
+            <img src="bird.jpg" class="img-reesponsive" style="height: 250px;">
+          </div>
+          <h5>Output on <b class="which">GLens Project - </b>
+            <span id="wolfram" class="model">Soft Toy</span>
+          </h5>
+          <h5>Output on <b class="which">Mobilenet Model - </b>
+            <span id="mobilenet" class="model">Ski Mask</span>
+          </h5>
+          <div class="mini_result">
+            <h4>Result - </h4>
+            <hr>
+            <h4><b>Google Lens</b> Is More Accurate</h4>
+          </div>
+      </div>
+    </div>
+
+    <div class="main_div margin">
+      <div class="test_images_and_result">
+          <div>
+            <b class="first_label" style="color: chocolate;">5. Test Image - </b>
+          </div>
+          <div>
+            <img src="infantbed.jpg" class="img-reesponsive">
+          </div>
+          <h5>Output on <b class="which">GLens Project - </b>
+            <span id="lens" class="model">Bed, Pillow, Blanket</span>
+          </h5>
+          <h5>Output on <b class="which">Mobilenet Model - </b>
+            <span id="mobilenet" class="model">bathtub, bathing tub, bath, tub</span>
+          </h5>
+          <div class="mini_result">
+            <h4>Result - </h4>
+            <hr>
+            <h4><b>Google Lens</b> Is More Accurate</h4>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 footer_div">
+    <h4 class="col-sm-6 col-xs-12">
+      <img src="blub.gif">
+      <span id="object_name">I have tested 5 images. <b class="model">Google Lens</b> have predicted 4 of the correctly and <b class="model">MobileNet</b> was less accurately. So according to my case study <b style="font-size: 22px; color: purple;">Google Lens</b> is more Accurate.</span>
+    <div class="copy_right_footer">
+      <marquee>Devoloped by - Manvi Mitta</marquee>
+    </div>
+  </body>
+</html>
